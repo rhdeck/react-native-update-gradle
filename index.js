@@ -8,7 +8,9 @@ const activateADB = () => {
 
 const getSDKPath = () => {
   //RIght now hardcoded for the mac
-  return Path.join(process.env["HOME"], "Library", "Android", "sdk");
+  return process.env["ANDROID_HOME"] !== undefined
+    ? process.env["ANDROID_HOME"]
+    : Path.join(process.env["HOME"], "Library", "Android", "sdk");
 };
 const getPTPath = () => {
   //RIght now hardcoded for the mac
