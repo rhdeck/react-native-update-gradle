@@ -1,6 +1,6 @@
 {
   "name": "react-native-update-gradle",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "React Native plugin to update gradle to current release",
   "main": "index.js",
   "scripts": {
