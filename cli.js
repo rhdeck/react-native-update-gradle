@@ -7,8 +7,8 @@ const rnug = require("./");
 const curdir = process.cwd();
 const androidPath = Path.join(curdir, "android");
 const targetGradleURI =
-  "https://services.gradle.org/distributions/gradle-4.6-all.zip";
-const androidGradlePluginVersion = "3.2.1";
+  "https://services.gradle.org/distributions/gradle-4.10-all.zip";
+const androidGradlePluginVersion = "3.3.2";
 if (!fs.existsSync(androidPath)) {
   console.log(
     "This needs to be run from the root of a react-native project that has android code in ./android"
